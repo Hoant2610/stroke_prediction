@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stroke Prediction Result</title>
+    <style>
+        /* Reset default margin and padding */
+        body, h1, p {
+          margin: 0;
+          padding: 0;
+        }
+        
+        /* Set background color and font styles */
+        body {
+          background-color: #f2f2f2;
+          font-family: Arial, sans-serif;
+        }
+        
+        /* Center the content */
+        body {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 100vh;
+          text-align: center;
+        }
+        
+        /* Style the heading */
+        h1 {
+          font-size: 24px;
+          margin-bottom: 20px;
+        }
+        
+        /* Style the paragraphs */
+        p {
+          font-size: 18px;
+          margin-bottom: 10px;
+        }
+        
+        /* Add some spacing between paragraphs */
+        p + p {
+          margin-top: 10px;
+        }
+        
+        /* Style the prediction paragraph */
+        p:first-of-type {
+          font-weight: bold;
+        }
+        
+        /* Style the confidence paragraph */
+        p:last-of-type {
+          font-style: italic;
+          color: #888888;
+        }
+        
+
+    </style>
+</head>
+<body>
+  <div style="border: 2px solid black; padding: 10px;">
+    <h1>Stroke Prediction Result</h1><hr><br/>
+    <p>Prediction: {{ prediction }}</p>
+    <p>Confidence: {{ c1 }} %</p>
+  </div>
+</body>
+</html>
